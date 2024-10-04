@@ -8,115 +8,15 @@
 
 /* /COMMON STYLES  */
 
-/* Fourth Section styles  */
-.portfolio-section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-}
-
-.portfolio-list {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-}
-
-.portfolio-main-title {
-        line-height: 1.11;
-        text-transform: capitalize;
-        text-align: center;
-
-        margin-bottom: 72px;
-}
-
-.portfolio-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-}
-
-.portfolio-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-}
-
-.portfolio-card-box {
-        padding: 32px 16px;
-        border: 1px solid #e7e9fc;
-        border-top: none;
-        width: 360px;
-}
-
-.portfolio-overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #4d5ae5;
-        overflow: auto;
-        transform: translateY(100%);
-        transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-overlay-text {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #f4f4fd;
-
-        padding-top: 40px;
-        padding-left: 32px;
-        padding-right: 32px;
-}
-
-.portfolio-img-box {
-        position: relative;
-        overflow: hidden;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-        transform: translateY(0%);
-}
-
-.portfolio-item:hover {
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        cursor: pointer;
-}
-
-.portfolio-item {
-        width: calc((100% - 48px) / 3);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-title {
-        margin-bottom: 8px;
-}
-
-.portfolio-img {
-        display: block;
-}
-
-/* /Fourth Section styles  */
-
 /* Footer styles  */
-.footer {
+.page-footer {
         background-color: #2e2f42;
 
         padding-top: 100px;
         padding-bottom: 100px;
 }
 
-.footer .footer-text {
+.page-footer .footer-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -190,10 +90,6 @@
         margin-bottom: 8px;
         margin-left: 8px;
         margin-right: 8px;
-}
-
-.footer-email-input-box {
-        margin-left: auto;
 }
 
 .subscribe-text {
