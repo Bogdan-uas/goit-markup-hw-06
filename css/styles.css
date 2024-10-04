@@ -388,13 +388,22 @@ ol {
     padding-top: 72px;
     padding-bottom: 72px;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    max-width: 767px;
+    max-width: 320px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-1@2x.jpg);
+}
 }
 
 .main-title {
@@ -452,7 +461,9 @@ h2 {
     padding-top: 112px;
     padding-bottom: 112px;
     
-    max-width: 1157px;
+    max-width: 768px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg.jpg);
 }
 
 .main-title {
@@ -465,6 +476,12 @@ h2 {
 }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@2x.jpg);
+}
+}
+
 @media screen and (min-width: 1158px) {
 .section-one {
     padding-top: 188px;
@@ -473,12 +490,20 @@ h2 {
     margin-left: auto;
 
     max-width: 1440px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
 }
 
 .main-title {
     margin-bottom: 48px;
 
     max-width: auto;
+}
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1@2x.jpg);
 }
 }
 
@@ -515,6 +540,7 @@ h2 {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
     color: #2e2f42;
 
     margin-bottom: 8px;
@@ -598,3 +624,128 @@ h2 {
 }
 /* /Second Section styles  */
 
+/* Third Section styles  */
+
+.team-section {
+    background-color: #f4f4fd;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.team-main-title {
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(264px + 264px + 24px);
+}
+
+.team-textname {
+    align-items: center;
+    padding-top: 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
+    max-width: 264px;
+}
+
+.team-card {
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D5AE5;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover {
+    background-color: #404BBF;
+}
+
+.svg-icon {
+    fill: #F4F4FD;
+}
+
+.team-svg-box {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 32px;
+    margin-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+.team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    flex-wrap: nowrap;
+    max-width: none;
+}
+}
+
+/* /Third Section styles  */
+
+/* Fourth Section styles  */
+
+
+
+/* /Fourth Section styles  */
