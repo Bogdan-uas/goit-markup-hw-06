@@ -1349,8 +1349,8 @@ h2 {
 @media screen and (min-width: 1158px) {
 .modal-close-button:hover,
 .modal-close-button:focus {
-        background-color: #404bbf;
-        border: none;
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-close-button:hover .button-cross {
